@@ -1,0 +1,164 @@
+ZAD 1
+
+// Tworzymy nowy element div za pomocą let
+let nowyDiv = document.createElement("div");
+
+// Ustawiamy tekst wewnątrz div
+nowyDiv.innerHTML = "To jest nowy div!";
+
+// Dodajemy nowy div do elementu body za pomocą let
+let body = document.body;
+body.appendChild(nowyDiv);
+
+
+ZAD 2
+// Znajdujemy element <h1>
+const naglowekH1 = document.querySelector('h1');
+
+// Sprawdzamy, czy element został znaleziony
+if (naglowekH1) {
+    // Zmieniamy kolor tekstu na czerwony
+    naglowekH1.style.color = 'red';
+} else {
+    console.error('Element <h1> nie został znaleziony na stronie.');
+}
+ZAD 3
+// Znajdujemy element <img> na stronie
+const obrazek = document.querySelector('img');
+
+// Sprawdzamy, czy element został znaleziony
+if (obrazek) {
+    // Ustawiamy nową wartość atrybutu src
+    obrazek.src = 'sciezka/do/twojego/nowego/obrazka.jpg';
+} else {
+    console.error('Element <img> nie został znaleziony na stronie.');
+}
+ZAD 4 
+// Znajdujemy element <p> na stronie
+const paragraf = document.querySelector('p');
+
+// Ukrywamy element, ustawiając jego styl na "display: none;"
+if (paragraf) {
+    paragraf.style.display = 'none';
+} else {
+    console.error('Element <p> nie został znaleziony na stronie.');
+}
+ZAD5
+// Tworzymy nowy element div
+const nowyDiv = document.createElement('div');
+
+// Dodajemy klasę do classList
+nowyDiv.classList.add('nKlasa');
+
+// Ustawiamy zawartość tekstu wewnątrz div
+nowyDiv.textContent = 'zawartosc';
+
+// Dodajemy nowy div do elementu body
+document.body.appendChild(nowyDiv);
+ZAD6
+// Znajdujemy element <li> z klasą "active"
+const activeListItem = document.querySelector('li.active');
+
+// Sprawdzamy, czy element został znaleziony
+if (activeListItem) {
+    // Usuwamy klasę "active" z elementu
+    activeListItem.classList.remove('active');
+
+ZAD7
+// Znajdujemy element <button> na stronie
+const button = document.querySelector('button');
+
+// Sprawdzamy, czy element został znaleziony
+if (button) {
+    // Zmieniamy tekst przycisku na "Przycisk!"
+    button.textContent = 'Przycisk!';
+}
+ZAD8
+const input = document.querySelector('input'); // Dodaj odpowiedni selektor, np. 'input'
+inputElement.value = '';
+
+ZAD9
+// Tworzymy nowy element li
+const newListElement = document.createElement('li');
+
+// Znajdujemy listę ul na stronie
+const unorderedList = document.querySelector('ul');
+
+// Dodajemy nowy element li do listy ul
+unorderedList.appendChild(newListElement);
+
+ZAD10
+// Znajdujemy element <body>
+const bodyElement = document.body;
+
+// Zmieniamy kolor tła na niebieski
+bodyElement.style.backgroundColor = 'blue';
+
+ZAD11
+// Utwórz nowy element <div> o klasie "new-div"
+const newDiv = document.createElement('div');
+newDiv.classList.add('new-div');
+
+// Znajdź element <header> na stronie
+const header = document.querySelector('header');
+
+// Dodaj nowy element <div> do elementu <header>
+header.appendChild(newDiv);
+
+ZAD12
+?????????????????
+
+ZAD13
+// Znajdź element <img> na stronie
+const image = document.querySelector('img');
+
+// Ustaw wartość atrybutu data-src na nowy obrazek (jeśli element został znaleziony)
+image && (image.dataset.src = 'newImage.jpg');
+
+// Usuń atrybut src (jeśli element został znaleziony)
+image && image.removeAttribute('src');
+
+ZAD14 
+// Znajdź wszystkie elementy <p> na stronie
+const paragraphs = document.querySelectorAll('p');
+
+// Pętla, aby ukryć co drugi element <p>
+for (let i = 1; i < paragraphs.length; i += 2) {
+    paragraphs[i].style.display = 'none';
+} 
+ZAD15
+???????????????????????????
+
+ZAD16
+
+
+ZAD17
+function removeElements() {
+  var listItems = document.querySelectorAll('ul li'); 
+
+  for (var i = 1; i < listItems.length; i += 2) {
+    listItems[i].remove();
+  }
+}
+
+ZAD18
+  function addParagraph(event) {
+    event.preventDefault();
+
+    // Pobierz tekst z pola tekstowego
+    var text = document.querySelector('#newParagraph').value;
+
+    // Utwórz nowy element paragrafu
+    var newParagraph = document.createElement('p');
+
+    // Ustaw tekst nowego paragrafu
+    newParagraph.textContent = text;
+
+    // Dodaj nowy paragraf na koniec sekcji Tekst
+    document.querySelector('section').appendChild(newParagraph);
+
+
+
+
+
+
